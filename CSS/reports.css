@@ -1,0 +1,143 @@
+/* Reset */
+body, h1, h2, h3, p, ul, li, a {
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    background-color: #f8f9fa;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #002147;
+    padding: 15px 30px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.navbar .logo img {
+    height: 50px;
+    width: auto;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: #ffcc00;
+}
+
+/* Background Video */
+.video-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    z-index: -1;
+}
+
+.background-video {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+}
+
+/* Form Container */
+.report-container {
+    background: rgba(255, 255, 255, 0.9); /* Light background for contrast */
+    padding: 30px;
+    border-radius: 12px;
+    text-align: center;
+    max-width: 400px;
+    width: 90%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    margin-top: 75px;
+    margin-left: 37%;
+}
+
+/* Headings */
+.report-container h2 {
+    font-size: 24px;
+    font-weight: 700;
+    color: #002147;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+
+/* Dropdown Styling */
+.report-container label {
+    font-weight: 600;
+    color: #333;
+    display: block;
+    margin-top: 15px;
+}
+
+.report-container select {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+    background: #fff;
+    transition: border 0.3s ease;
+}
+
+.report-container select:focus {
+    border-color: #002147;
+    outline: none;
+}
+
+/* Button Styling */
+.report-container .generate-btn {
+    background-color: #002147;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 6px;
+    width: 100%;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.report-container .generate-btn:hover {
+    background-color: #0044cc;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .report-container {
+        width: 95%;
+    }
+}
+/* Footer */
+footer {
+    background-color: rgba(26, 26, 46, 0.85);
+    color: white;
+    text-align: center;
+    padding: 15px;
+}

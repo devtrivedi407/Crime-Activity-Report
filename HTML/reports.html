@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generate Crime Reports</title>
+    <link rel="stylesheet" href="/CSS/reports.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <a href="index.html"><img src="/Media/Logo.jpg" alt="Crime Report Logo"></a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="/CRIME ACTIVITY REPORT.html">Home</a></li>
+                <li><a href="reports.html">Reports</a></li>
+                <li><a href="powerbi.html">Power BI Reports</a></li>
+                <li><a href="../HTML/graphs.html">Graph Generator</a></li>
+                <li><a href="../HTML/crime-trends.html">Crime Predictor</a></li>
+                <li><a href="emergency.html">Emergency</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="video-container">
+        <video autoplay muted loop class="background-video">
+            <source src="/Media/Background Video/5726498-hd_1920_1080_30fps.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+    <!-- Report Generator -->
+    <div class="report-container">
+        <h2>Generate Crime Report</h2>
+    
+        <label for="state">Select State:</label>
+        <select id="state">
+            <option value="">All States</option>
+            <!-- Options populated dynamically -->
+        </select>
+    
+        <label for="year">Select Year:</label>
+        <select id="year">
+            <option value="">All Years</option>
+            <!-- Options populated dynamically -->
+        </select>
+    
+        <label for="crimeType">Select Crime Type:</label>
+        <select id="crimeType">
+            <option value="">All Crime Types</option>
+            <!-- Options populated dynamically -->
+        </select>
+    
+        <button class="generate-btn" onclick="generateReport()">Generate Report</button>
+    </div>
+    <script src="/JS/reports.js"></script>
+</body>
+</html>

@@ -1,0 +1,129 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+.h1 {
+    background: #002855;
+    color: white;
+    text-align: center;
+    padding: 1.5rem;
+    font-size: 26px;
+    font-weight: bold;
+    margin-top: 110px;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(26, 26, 46, 0.9);
+    padding: 15px 30px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    backdrop-filter: blur(10px);
+}
+
+.navbar .logo img {
+    height: 50px;
+    width: auto;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.3s;
+    margin-right: 35px;
+}
+
+.nav-links a:hover, .nav-links .active {
+    color: #ffcc00;
+}
+
+
+.container {
+    max-width: 1000px;
+    margin: 20px auto;
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.15);
+}
+
+.filters {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 20px;
+    padding: 15px;
+    background: #e3e6eb;
+    border-radius: 10px;
+}
+
+label {
+    font-weight: bold;
+}
+
+select, button {
+    padding: 12px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    background: white;
+}
+
+button {
+    background-color: #d32f2f;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+    font-weight: bold;
+    padding: 12px 20px;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #b71c1c;
+}
+
+.chart-container {
+    max-width: 100%;
+    padding: 20px;
+    text-align: center;
+}
+
+canvas {
+    max-width: 100%;
+    height: 500px;
+}
+
+/* 🔹 New Section: Predictions Summary */
+.prediction-summary {
+    margin-top: 20px;
+    padding: 15px;
+    background: #f8f9fa;
+    border-left: 5px solid #d32f2f;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    color: #d32f2f;
+    border-radius: 5px;
+}

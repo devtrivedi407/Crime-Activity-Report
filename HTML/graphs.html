@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crime Data Graph Generator</title>
+    <link rel="stylesheet" href="../CSS/graphs.css">
+    <script defer src="../JS/graphs.js"></script>
+</head>
+<body
+    style="background: url('../Media/Background-Image/pexels-pixabay-265087.jpg') no-repeat center center fixed; background-size: cover; background-color: #f8f9fa;">
+
+    <!-- ✅ Navbar -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <a href="../CRIME ACTIVITY REPORT.html"><img src="../Media/Logo.jpg" alt="Crime Report Logo"></a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="../CRIME ACTIVITY REPORT.html">Home</a></li>
+                <li><a href="../HTML/reports.html">Reports</a></li>
+                <li><a href="../HTML/powerbi.html">Power BI Reports</a></li>
+                <li><a href="../HTML/graphs.html">Graph Generator</a></li>
+                <li><a href="../HTML/crime-trends.html">Crime Predictor</a></li>
+                <li><a href="../HTML/emergency.html">Emergency</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- ✅ Graph Generator Form -->
+    <section class="graph-generator">
+        <h2>Generate Crime Data Graph</h2>
+        <form id="graph-form">
+            <label for="graphType">Select Graph Type:</label>
+            <select id="graphType">
+                <option value="bar">Bar Chart</option>
+                <option value="pie">Pie Chart</option>
+                <option value="line">Line Chart</option>
+                <option value="scatter">Scatter Plot</option>
+            </select>
+
+            <label for="state">Select State:</label>
+            <select id="state">
+                <option value="all">All States</option>
+            </select>
+
+            <label for="year">Select Year:</label>
+            <select id="year">
+                <option value="all">All Years</option>
+            </select>
+
+            <label for="crimeType">Select Crime Type:</label>
+            <select id="crimeType">
+                <option value="all">All Crime Types</option>
+            </select>
+
+            <button type="button" id="generateGraph">Generate Graph</button>
+        </form>
+    </section>
+
+    <!-- ✅ Graph Display -->
+    <section class="graph-display">
+        <h2>Generated Graph</h2>
+        <img id="graphImage" src="" alt="Generated Graph" style="display: none;">
+        <button id="downloadGraph" style="display: none;">Download Graph</button>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Crime Activity Report. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>

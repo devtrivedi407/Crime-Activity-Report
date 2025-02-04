@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crime Trends & Predictive Analytics</title>
+    <link rel="stylesheet" href="../CSS/trends.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.0/papaparse.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script defer src="../JS/trends.js"></script>
+</head>
+<body
+        style="background: url('../Media/Background-Image/pexels-pachon-in-motion-426015731-30547572.jpg') no-repeat center center fixed; background-size: cover; background-color: #f8f9fa;">
+
+
+        <!-- ✅ Navbar -->
+        <header>
+            <nav class="navbar">
+                <div class="logo">
+                    <a href="../CRIME ACTIVITY REPORT.html"><img src="../Media/Logo.jpg" alt="Crime Report Logo"></a>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="../CRIME ACTIVITY REPORT.html">Home</a></li>
+                    <li><a href="../HTML/reports.html">Reports</a></li>
+                    <li><a href="../HTML/powerbi.html" class="active">Power BI Reports</a></li>
+                    <li><a href="../HTML/graphs.html">Graph Generator</a></li>
+                    <li><a href="../HTML/crime-trends.html">Crime Predictor</a></li>
+                    <li><a href="../HTML/emergency.html">Emergency</a></li>
+                    
+                </ul>
+            </nav>
+        </header>
+    
+    
+        <h1 class="h1">Crime Trends & Predictive Analytics</h1>
+    
+    <main class="container">
+        <section class="filters">
+            <label for="stateSelect">Select State:</label>
+            <select id="stateSelect">
+                <option value="All">All</option>
+            </select>
+
+            <label for="crimeSelect">Select Crime Type:</label>
+            <select id="crimeSelect">
+                <option value="All">All</option>
+            </select>
+
+            <button id="generateTrends">Generate Trends</button>
+            <button id="predictFuture">Predict Next 5 Years</button>
+        </section>
+
+        <section class="chart-container">
+            <canvas id="crimeTrendsChart"></canvas>
+        </section>
+
+        <section id="predictionSummary" class="prediction-summary" style="display: none;">
+            📊 Predicted Crime Trend: <span id="predictionText"></span>
+        </section>
+        
+    </main>
+</body>
+</html>

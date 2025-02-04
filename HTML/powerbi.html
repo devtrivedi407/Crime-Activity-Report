@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Power BI Reports - Crime Activity</title>
+    <link rel="stylesheet" href="../CSS/powerbi.css">
+    <script defer src="../JS/powerbi.js"></script>
+</head>
+<body
+    style="background: url('../Media/Background-Image/pexels-goumbik-577210.jpg') no-repeat center center fixed; background-size: cover; background-color: #f8f9fa;">
+
+
+    <!-- ✅ Navbar -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <a href="../CRIME ACTIVITY REPORT.html"><img src="../Media/Logo.jpg" alt="Crime Report Logo"></a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="../CRIME ACTIVITY REPORT.html">Home</a></li>
+                <li><a href="../HTML/reports.html">Reports</a></li>
+                <li><a href="../HTML/powerbi.html" class="active">Power BI Reports</a></li>
+                <li><a href="../HTML/graphs.html">Graph Generator</a></li>
+                <li><a href="../HTML/crime-trends.html">Crime Predictor</a></li>
+                <li><a href="../HTML/emergency.html">Emergency</a></li>
+                <li>
+                    <!-- ✅ Dark Mode Toggle -->
+                    <button id="dark-mode-toggle">🌙 Dark Mode</button>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- ✅ Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Power BI Insights & Analytics</h1>
+            <p>Leveraging Power BI to analyze crime trends, visualize data, and extract meaningful insights.</p>
+        </div>
+    </section>
+
+    <!-- ✅ Why Power BI Section -->
+    <section class="powerbi-info">
+        <h2>Why Power BI?</h2>
+        <p>
+            Power BI was chosen for its powerful <b><i>data visualization</i></b> capabilities, allowing us to generate meaningful crime reports 
+            and trends from raw data. With <i><b>interactive dashboards, real-time insights, and dynamic filtering</i></b>, Power BI enables 
+            law enforcement agencies and policymakers to make data-driven decisions.
+        </p>
+    </section>
+
+    <!-- ✅ Power BI Reports Grid -->
+    <section class="reports-section">
+        <h2>Explore Power BI Reports</h2>
+        <div class="report-grid" id="report-container">
+            <!-- Reports will be dynamically loaded here -->
+        </div>
+    </section>
+
+    <!-- ✅ Report Modal for Full-Screen View -->
+    <div id="report-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <h3 id="modal-title"></h3>
+            <iframe id="modal-frame"></iframe>
+            <p id="modal-summary"></p>
+            <a id="download-summary" class="btn" download>Download Summary</a>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Crime Activity Report. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>

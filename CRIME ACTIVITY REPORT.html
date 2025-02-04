@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crime Activity Report</title>
+    <link rel="stylesheet" href="CSS/CrimeActivityReport.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <a href="index.html"><img src="/Media/Logo.jpg" alt="Crime Report Logo"></a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="CRIME ACTIVITY REPORT.html">Home</a></li>
+                <li><a href="HTML/reports.html">Reports</a></li>
+                <li><a href="HTML/powerbi.html">Power BI Reports</a></li>
+                <li><a href="HTML/graphs.html">Graph Generator</a></li>
+                <li><a href="HTML/crime-trends.html">Crime Predictor</a></li>
+                <li><a href="HTML/emergency.html">Emergency</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Crime Activity Report</h1>
+            <p>Stay informed with real-time crime insights, data analytics and crime predictions.</p>
+            <a href="HTML/reports.html" class="btn">Explore Reports</a>
+        </div>
+    </section>
+
+    <section class="features">
+        <div class="feature-box">
+            <img src="/Media/Security Image/SECURITY_2.jpg" alt="Security">
+            <h3>Safety & Awareness</h3>
+            <p>Stay updated with the latest crime statistics in your area.</p>
+        </div>
+        <div class="feature-box">
+            <img src="/Media/DataDrivenInsights.jpg" alt="Data Analysis">
+            <h3>Data-Driven Insights</h3>
+            <p>Analyze trends and patterns to help prevent crimes.</p>
+        </div>
+        <div class="feature-box">
+            <img src="/Media/CommunityEngagement.jpg" alt="Community">
+            <h3>Community Engagement</h3>
+            <p>Empowering communities through open crime data.</p>
+        </div>
+    </section>
+    <section class="counter-section">
+        <h2>Crime Statistics</h2>
+        <div class="counter-container">
+            <div class="counter-box">
+                <h3>Crimes in the Last 24 Hours</h3>
+                <p id="crime-24hrs" class="counter">4,562</p>
+            </div>
+            <div class="counter-box">
+                <h3>Crimes in the Last Week</h3>
+                <p id="crime-week" class="counter">30,854</p>
+            </div>
+            <div class="counter-box">
+                <h3>Crimes in the Last Month</h3>
+                <p id="crime-month" class="counter">132,567</p>
+            </div>
+            <div class="counter-box">
+                <h3>Total Crimes This Year</h3>
+                <p id="crime-year" class="counter">1,458,902</p>
+            </div>
+        </div>
+    </section>
+    <!-- NEW: Search Reports Section -->
+    <section class="search-reports">
+        <h2>Search Crime Reports</h2>
+        <input type="text" id="search-bar" placeholder="Enter Crime Type, State, or Year...">
+        <button onclick="searchReports()">Search</button>
+    </section>
+    <footer>
+        <p>&copy; 2025 Crime Activity Report. All Rights Reserved.</p>
+    </footer>
+    <script src="JS/main.js"></script>
+</body>
+
+</html>

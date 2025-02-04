@@ -1,0 +1,298 @@
+/* General Styling */
+body {
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f6f9;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(26, 26, 46, 0.9);
+    padding: 15px 30px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    backdrop-filter: blur(10px);
+}
+
+.navbar .logo img {
+    height: 50px;
+    width: auto;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.nav-links a:hover, .nav-links .active {
+    color: #ffcc00;
+}
+
+/* Hero Section */
+.hero {
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.6), rgba(26, 26, 46, 0.8)), url('../images/powerbi-banner.jpg') center/cover no-repeat;
+    height: 350px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+
+.hero-content h1 {
+    font-size: 2.8em;
+    font-weight: bold;
+    color: #ffcc00;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
+}
+
+.hero-content p {
+    font-size: 1.2em;
+    color: #e0e0e0;
+}
+
+/* Power BI Explanation */
+.powerbi-info {
+    max-width: 800px;
+    margin: 50px auto;
+    text-align: center;
+    background: linear-gradient(135deg, #002147, #0044cc);
+    color: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.powerbi-info h2 {
+    color: #ffcc00;
+    margin-bottom: 15px;
+}
+
+/* Reports Section */
+.reports-section {
+    text-align: center;
+    padding: 50px;
+    background: #f0f2f5;
+}
+
+.reports-section h2 {
+    color: #002147;
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+/* Report Grid */
+.report-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Report Tile */
+.report-tile {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.report-tile:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.report-tile h3 {
+    font-size: 18px;
+    font-weight: bold;
+    color: #002147;
+    margin-bottom: 10px;
+}
+
+.report-tile iframe {
+    width: 100%;
+    height: 300px;
+    border-radius: 8px;
+    border: none;
+}
+
+/* Footer */
+footer {
+    background: rgba(26, 26, 46, 0.9);
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 50px;
+}
+
+/* Dark Mode Styling */
+/* Dark Mode Styling */
+/* ✅ Apply Dark Mode to Entire Page */
+body.dark-mode {
+    background-color: #121212;
+    color: #ffffff;
+    transition: background 0.5s ease, color 0.5s ease;
+}
+
+/* ✅ Navbar Fix in Dark Mode */
+.dark-mode .navbar {
+    background: rgba(0, 0, 0, 0.9);
+    transition: background 0.5s ease;
+}
+
+.dark-mode .navbar a {
+    color: #ffcc00;
+    transition: color 0.3s ease;
+}
+
+/* ✅ Fix Tile Background in Dark Mode */
+.dark-mode .report-tile {
+    background: #1e1e1e;
+    color: #ffffff;
+    box-shadow: 0 6px 15px rgba(255, 255, 255, 0.1);
+    transition: background 0.5s ease, box-shadow 0.5s ease, color 0.5s ease;
+}
+
+.dark-mode .report-tile h3 {
+    color: #ffcc00;
+}
+
+/* ✅ Power BI Info Box in Dark Mode */
+.dark-mode .powerbi-info {
+    background: linear-gradient(135deg, #0044cc, #002147);
+    color: #ffffff;
+    transition: background 0.5s ease;
+}
+
+/* ✅ Fix Headings for Better Visibility in Dark Mode */
+.dark-mode .hero-content h1,
+.dark-mode .reports-section h2,
+.dark-mode .report-tile h3 {
+    color: #ffcc00;
+    transition: color 0.3s ease;
+}
+
+/* ✅ Dark Mode Button with Smooth Animation */
+#dark-mode-toggle {
+    background: #002147;
+    color: white;
+    padding: 10px 18px;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: background 0.4s ease-in-out, transform 0.2s ease-in-out;
+    margin-right: 40px;
+    margin-top: -15px;
+}
+
+/* ✅ Dark Mode Hover Effect */
+#dark-mode-toggle:hover {
+    background: #ffcc00;
+    color: black;
+    transform: scale(1.05);
+}
+
+/* ✅ Button Style Change in Dark Mode */
+body.dark-mode #dark-mode-toggle {
+    background: #ffcc00;
+    color: black;
+    transform: scale(1.1);
+}
+
+body.dark-mode #dark-mode-toggle:hover {
+    background: #0044cc;
+    color: white;
+    transform: scale(1.05);
+}
+
+/* Report Modal (Expandable View) */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    width: 80%;
+    text-align: center;
+}
+
+.modal-content iframe {
+    width: 100%;
+    height: 400px;
+}
+
+.close-btn {
+    float: right;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+/* Report Grid */
+.report-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Report Tile */
+.report-tile {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.report-tile:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.report-tile h3 {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* Footer */
+footer {
+    background-color: rgba(26, 26, 46, 0.85);
+    color: white;
+    text-align: center;
+    padding: 15px;
+}

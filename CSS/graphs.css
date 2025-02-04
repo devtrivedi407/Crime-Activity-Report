@@ -1,0 +1,139 @@
+/* General Styling */
+body {
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(26, 26, 46, 0.9);
+    padding: 15px 30px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    backdrop-filter: blur(10px);
+}
+.navbar .logo img {
+    height: 50px;
+    width: auto;
+}
+
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.3s;
+    margin-right: 40px;
+}
+
+.nav-links a:hover, .nav-links .active {
+    color: #ffcc00;
+}
+
+/* Hero Section */
+.hero {
+    background: url('../images/graph-banner.jpg') center/cover no-repeat;
+    height: 350px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.hero-content h1 {
+    font-size: 2.8em;
+    color: white;
+}
+
+.hero-content p {
+    font-size: 1.2em;
+    color: #e0e0e0;
+}
+
+/* Graph Generator Section */
+.graph-generator {
+    max-width: 600px;
+    margin: 50px auto;
+    text-align: center;
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-top: 170px;
+    background: linear-gradient(135deg, #002147, #0044cc);
+    color: #ffcc00;
+}
+
+.graph-generator label {
+    font-weight: bold;
+    display: block;
+    margin-top: 15px;
+}
+
+.graph-generator select {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+/* Generate Graph Button */
+#generateGraph {
+    background: #002147;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+#generateGraph:hover {
+    background: #0044cc;
+}
+
+/* Graph Display */
+.graph-display {
+    text-align: center;
+    padding: 50px;
+}
+
+canvas {
+    max-width: 80%;
+    height: auto;
+}
+
+#downloadGraph {
+    margin-top: 15px;
+    padding: 10px 15px;
+    background: #ffcc00;
+    color: black;
+    border: none;
+    cursor: pointer;
+    display: none;
+}
+/* Footer */
+footer {
+    background-color: rgba(26, 26, 46, 0.85);
+    color: white;
+    text-align: center;
+    padding: 15px;
+}

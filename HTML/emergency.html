@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emergency Contacts</title>
+    <link rel="stylesheet" href="../CSS/emergency.css">
+    <script defer src="../JS/emergency.js"></script>
+</head>
+
+<body>
+
+    <body
+        style="background: url('../Media/Background-Image/pexels-gvbrielh-10543088.jpg') no-repeat center center fixed; background-size: cover; background-color: #f8f9fa;">
+
+
+        <!-- ✅ Navbar -->
+        <header>
+            <nav class="navbar">
+                <div class="logo">
+                    <a href="../CRIME ACTIVITY REPORT.html"><img src="../Media/Logo.jpg" alt="Crime Report Logo"></a>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="../CRIME ACTIVITY REPORT.html">Home</a></li>
+                    <li><a href="../HTML/reports.html">Reports</a></li>
+                    <li><a href="../HTML/powerbi.html" class="active">Power BI Reports</a></li>
+                    <li><a href="../HTML/graphs.html">Graph Generator</a></li>
+                    <li><a href="../HTML/crime-trends.html">Crime Predictor</a></li>
+                    <li><a href="../HTML/emergency.html">Emergency</a></li>
+                    
+                </ul>
+            </nav>
+        </header>
+
+        <h1 class="h1">Emergency Contacts & FAQs</h1>
+
+        <section class="buttons-container">
+            <button class="emergency-btn" onclick="callEmergency('911')">📞 Dial 911</button>
+            <button class="emergency-btn" onclick="callEmergency('Local Police')">🚓 Contact Local Police</button>
+            <button class="emergency-btn" onclick="reportIncident()">📋 Report an Incident</button>
+        </section>
+
+        <section class="faq-container">
+            <h2>Frequently Asked Questions</h2>
+            <div class="faq-item">
+                <button class="faq-question">❓ When should I call 911? <span class="toggle-icon">+</span></button>
+                <div class="faq-answer">Call 911 for life-threatening emergencies, crimes in progress, or when urgent
+                    medical attention is needed.</div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question">❓ How can I report a crime anonymously? <span
+                        class="toggle-icon">+</span></button>
+                <div class="faq-answer">You can report a crime anonymously by contacting Crime Stoppers or using our
+                    Report an Incident feature.</div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question">❓ What should I do if I witness a crime? <span
+                        class="toggle-icon">+</span></button>
+                <div class="faq-answer">Stay safe, call 911 if needed, and provide accurate details to law enforcement.
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <p>&copy; 2025 Crime Activity Report. All Rights Reserved.</p>
+        </footer>
+    </body>
+
+</html>
