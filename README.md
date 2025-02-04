@@ -1,33 +1,46 @@
 # Crime Activity Report
 
 ## Overview
-The **Crime Activity Report** is a data visualization website that enables users to explore and analyze crime patterns across the **50 U.S. states** from **1960 to 2019**. The project uses **MongoDB** to store and manage crime data imported from publicly available **JSON datasets**. Excel is used for viewing, cleaning, and preparing the data before importing it into MongoDB for use in the application.
+The **Crime Activity Report** is an interactive **data visualization and analytics platform** that enables users to explore and analyze **crime patterns across all 50 U.S. states from 1960 to 2019**. The project integrates **Flask, Python, JavaScript, HTML, CSS, Power BI, and Pandas** to provide users with **dynamic crime trend analysis, automated reports, and predictive insights**.  
 
-The website offers an interactive interface where users can explore crime statistics, view historical trends, and access detailed crime reports.
+The website features an **interactive dashboard** where users can **visualize crime trends, generate dynamic reports, and analyze future predictions** based on historical crime data. **Flask** powers the backend, processing data and dynamically serving **interactive charts and Power BI reports**.
+
+---
 
 ## Features
-- **Historical Crime Data**: Analyze crime trends from 1960 to 2019 across all 50 states in the U.S.
-- **Interactive Data Visualizations**: Visualize crime data via various charts and reports.
-- **Data Cleaning**: Use of **Excel** to view and clean the crime data before importing it into MongoDB.
-- **MongoDB Backend**: Crime data is stored in **MongoDB**, making it easy to retrieve and display on the front-end.
-- **Reports**: Access detailed crime reports and historical data trends.
+- **Historical Crime Data**: Explore crime trends from **1960 to 2019** across all **50 U.S. states**.
+- **Interactive Data Visualizations**: Generate **graphs, charts, and Power BI dashboards** for crime trends.
+- **Data Cleaning & Processing**: Used **Excel & Pandas** for **data cleaning, preprocessing, and trend analysis**.
+- **Flask Backend**: Handles **data processing, visualization, and dynamic report generation**.
+- **Predictive Analytics**: **Implemented Linear Regression** to forecast future crime trends.
+- **Automated Reports**: Flask dynamically **generates crime reports** based on selected states and crime categories.
+
+---
 
 ## Technologies Used
-  - **Excel**: Used to clean and process public crime data in **JSON format** before importing it into MongoDB.
-  - **HTML5**: For building the structure of the website.
-  - **CSS3**: For styling and layout.
-  - **Google Cloud Platform**: Used to host the application and MongoDB database.
-  - **Public JSON Datasets**: Crime data in JSON format sourced from various public datasets.
+  - **Flask (Python)**: Backend framework for data processing, routing, and generating reports.
+  - **Pandas & Excel**: Used for **data cleaning, processing, and statistical analysis**.
+  - **Power BI**: Created **dynamic dashboards & data visualizations** for crime trends.
+  - **JavaScript (Chart.js)**: Developed **interactive visualizations and dynamic charts**.
+  - **HTML5 & CSS3**: Designed a **modern and responsive front-end** for the platform.
+  - **Data Sources**: Crime data sourced from **publicly available CSV datasets**.
+
+---
 
 ## Pages Available
-1. **CRIME ACTIVITY REPORT.html**: Main dashboard displaying crime data visualizations.
-2. **CUSTOMER CARE.html**: Contact page for user support.
-3. **EMERGENCY.html**: Emergency contact information and guidelines.
-4. **LOGIN PAGE.html**: User authentication page for secure access.
-5. **SIGNUP PAGE.html**: User registration page for new users.
-6. **REPORTS.html**: Detailed reports on crime activity across different states.
+1. **Home (CrimeActivityReport.html)**: Main website displaying crime data visualizations.
+2. **Reports (reports.html)**: Dynamic reports and analysis of crime trends.
+3. **Power BI Reports (powerbi.html)**: Interactive **Power BI dashboards** for data exploration.
+4. **Graph Generator (graphs.html)**: User-generated graphs with **trend analysis**.
+5. **Emergency (emergency.html)**: Emergency contact information and quick-access buttons.
+6. **Crime Trends (crime-trends.html)**: **Predictive analytics page** displaying **crime forecasts using Linear Regression**.
 
+---
 
 ## Acknowledgements
-- **MongoDB** for providing a powerful database for storing data.
-- **Google Cloud Platform** for hosting the application.
+- **Flask** for powering the backend and enabling dynamic report generation.
+- **Pandas & Excel** for data cleaning and analytics.
+- **Power BI** for delivering interactive and insightful crime trend dashboards.
+- **Chart.js** for visualizing crime trends in an engaging way.
+
+---
